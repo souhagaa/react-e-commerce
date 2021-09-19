@@ -1,0 +1,81 @@
+body {
+  margin: 0;
+  /* font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif; */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  background-image: linear-gradient(-225deg, grey 0%, #40b6b0 100%);
+  background-image: linear-gradient(to top, grey 0%, #40b6b0 100%);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+
+  font-family: "Vibur", cursive;
+  overflow-x: hidden; /* Hide horizontal scrollbar */
+  overflow-y: auto;
+  font-family: "Abel", sans-serif;
+  opacity: 0.95;
+}
+
+input {
+  width: 90%;
+  height: 50%;
+
+  margin-top: 2%;
+  padding: 15px;
+
+  font-size: 16px;
+  font-family: "Abel", sans-serif;
+  color: #5e6472;
+
+  outline: none;
+  border: none;
+
+  border-radius: 0px 5px 5px 0px;
+  transition: 0.2s linear;
+}
+select {
+  width: 20%;
+  height: 40%;
+  margin-left: 4%;
+  margin-top: 2%;
+  padding: 15px;
+  font-family: "Abel", sans-serif;
+}
+#myRange {
+  margin-left: 60%;
+}
+/* focus  */
+input:focus {
+  transform: translateX(-4px);
+  border-radius: 5px;
+}
+
+#filter-form {
+  width: 20%;
+  height: 20%;
+
+  border-radius: 5px;
+  margin: 8% auto auto 42%;
+  box-shadow: 0 9px 50px hsla(20, 67%, 75%, 0.31);
+  padding: 2%;
+  background-image: linear-gradient(-225deg, #d7fbf0 50%, #fbfada 50%);
+}
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+:root {
+  --red: #b00;
+  --blue: #40b6b0;
+  --grey: #555;
+  --W200: 200px;
+  --Lft: left;
+  --bigTxt: 3vw;
+}
+
+/* Fonts Form Google Font ::- https://fonts.google.com/  -:: */
+@import url("https://fonts.googleapis.com/css?family=Abel|Abril+Fatface|Alegreya|Arima+Madurai|Dancing+Script|Dosis|Merriweather|Oleo+Script|Overlock|PT+Serif|Pacifico|Playball|Playfair+Display|Share|Unica+One|Vibur");
+/* End Fonts */

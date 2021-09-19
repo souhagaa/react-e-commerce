@@ -1,0 +1,11 @@
+{
+  "short_name": "ReactJs challenge App",
+  "name": "ReactJs challenge App",
+  "icons": [
+    
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#53868B",
+  "background_color": "#ffffff"
+}
