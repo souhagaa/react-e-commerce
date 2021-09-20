@@ -4,7 +4,7 @@ import Item from "../Item";
 import "./items.css";
 
 const Items = ({ data, parent, orderOps, orderBy }) => {
-  const [selectedFilter, setSelectedFilter] = useState("");
+  const [selectedFilter, setSelectedFilter] = useState("none");
 
   useEffect(() => {
     if (orderOps && orderBy) orderBy(selectedFilter);
@@ -20,12 +20,13 @@ const Items = ({ data, parent, orderOps, orderBy }) => {
       {orderOps && (
         <select value={selectedFilter} onChange={handleChange}>
           {orderOps.map((option) => (
-            <option key={option} value={option}>
+            <option key={option} defaultValue="default">
               {option}
             </option>
           ))}
         </select>
       )}
+      {console.log("items data", data)}
       <main className="grid">
         {data.map((item) => (
           <Item key={item.id} item={item} parent={parent} />

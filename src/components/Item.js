@@ -8,6 +8,7 @@ const Item = ({ item, parent }) => {
       case "products":
         return (
           <article>
+            {console.log("item", item)}
             <img src={item.image} alt={item.title} />
             <div className="text">
               <h3>{item.title}</h3>
